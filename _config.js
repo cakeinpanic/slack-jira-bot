@@ -8,8 +8,8 @@ module.exports = {
         port: '80',
         user: '***',
         password: '***',
-        projects: ['IBULF'], // in MPR-554 'MPR' would be a project name
-        useThread: true, // publish issue info into thread or directly in channel,
-        issueLink: 'https://jira.mycompany.com/browse/' // optional, otherwise link to issue would be combined like https://{host}/browse/
+        projects: ['PROJ'], // ** optional ** list of project keys. If not provided, all user's project would be used
+        useThread: true, //  ** optional(default false) ** publish issue info into thread or directly in channel,
+        issueLink: 'https://jira.mycompany.com/browse/' // ** optional ** , otherwise link to issue would be combined like https://{host}/browse/
     }
 };
