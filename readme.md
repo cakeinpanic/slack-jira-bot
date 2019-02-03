@@ -7,14 +7,4 @@ Bot that looks up for jira issues mentioned and adds information about them
 
 
 ## TODO:
-*jira:*
-
-*stash:*
-
-* format response
-* set different projects for different channels
-
-* ping regularly on PRs waiting for review
-* add possibility to write personally to each user from bot
-* add stash hooks
-* add possibility to setup how often to ping you
+Add dockerfile
