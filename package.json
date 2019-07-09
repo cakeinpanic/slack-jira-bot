@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prettier": "prettier --write './**/*.js'",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "docker:build": "docker build -t slack-jira-bot .",
+    "docker:start": "docker run --env-file env.list --rm -p 5000:5000 -d slack-jira-bot"
   },
   "lint-staged": {
     "*.js": [
