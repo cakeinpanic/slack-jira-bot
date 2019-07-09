@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "env-cmd -f env.list node index.js",
+    "start:ci": "node index.js",
     "prettier": "prettier --write './**/*.js'",
     "precommit": "lint-staged",
     "docker:build": "docker build -t slack-jira-bot .",
@@ -28,6 +29,7 @@
     "prettier": "^1.12.1"
   },
   "devDependencies": {
+    "env-cmd": "^9.0.3",
     "husky": "^0.14.3"
   }
 }
